@@ -1,16 +1,69 @@
-# React + Vite
+🏠 Cotizador de Propiedades – Aseguradora FORTE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en React + Vite, que permite a los usuarios cotizar seguros de propiedad en base a múltiples factores:
 
-Currently, two official plugins are available:
+Datos personales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tipo de propiedad
 
-## React Compiler
+Superficie
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ubicación
 
-## Expanding the ESLint configuration
+Tipo de cobertura (Básica / Intermedia / Completa)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Incluye cálculo dinámico, historial de cotizaciones y diseño responsive.
+
+🚀 Características principales
+✔ Formulario completo
+
+Nombre
+
+Edad (+18 validación)
+
+Tipo de propiedad
+
+Superficie m²
+
+Ubicación
+
+Tipo de cobertura
+
+✔ Opciones de cobertura
+
+Tabla comparativa con costos incrementales
+
+Selección visible por parte del usuario
+
+✔ Cálculo automático del costo final
+
+El costo de la póliza se calcula combinando:
+
+Base fija
+
+Tipo de propiedad
+
+Superficie
+
+Ajuste según cobertura
+
+✔ Historial de cotizaciones
+
+Las cotizaciones quedan guardadas durante toda la sesión.
+
+✔ Diseño moderno y responsive
+
+Hecho en CSS puro con componentes React funcionales.
+
+📂 Tecnologías utilizadas
+
+React 18
+
+Vite
+
+React Router
+
+UUID
+
+CSS puro / responsive
+
