@@ -1,0 +1,82 @@
+/* src/index.css — pegar exactamente */
+:root {
+  --max-w: 980px;
+  --page-pad: 24px;
+  --bg: #f4f6f9;
+  --card-bg: #fff;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: #222;
+}
+
+/* Asegura que el root centre su contenido */
+#root {
+  display: flex;
+  align-items: flex-start; /* top align para que header no quede centrado verticalmente */
+  justify-content: center;
+  padding: 32px 12px;
+}
+
+/* Wrapper principal que envuelve la app */
+.app-wrapper {
+  width: 100%;
+  max-width: var(--max-w);
+  box-sizing: border-box;
+}
+
+/* Contenedor interior */
+.container {
+  background: var(--card-bg);
+  padding: calc(var(--page-pad) * 1.25);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  margin: 0 auto;
+}
+
+/* Header simple */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+/* Título */
+.page-title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+/* Forzar inputs y layout del form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select, button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Resultado / tarjeta historial */
+.resultado-box, .hist-item {
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #f7fbff;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  #root { padding: 18px 8px; }
+  .container { padding: 16px; }
+}
